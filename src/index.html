@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<title>Memomeow</title>
-	</head>
-	<body class="h-screen w-screen flex flex-col items-center">
-		<header class="h-1/6">
-			<h1 class="text-center">Memomeow</h1>
-			<div id="score-board" class="w-full h-5/6 flex justify-around"></div>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memomeow</title>
+  </head>
+  <body class="h-screen w-screen flex flex-col items-center bg-red-200">
+    <header class="h-1/6">
+      <h1 class="text-center text-4xl p-8">Memory Game</h1>
+      <div id="score-board" class="w-full h-5/6 flex justify-around"></div>
+    </header>
 
-		<main style="height: 420px; width: 580px">
-			<div
-				id="card-grid"
-				class="h-full w-full bg-red-300 grid grid-cols-6 gap-1"
-			></div>
-		</main>
+    <main style="height: 420px; width: 580px">
+      <div
+        id="card-grid"
+        class="h-full w-full p-2 grid grid-cols-6 gap-1"
+      ></div>
+      <p class="pt-8 pb-2">
+        This is a Memory Game aka Matching Pairs aka Concentration, or
+        alternatively Shinkei-suijaku (Japanese meaning "nervous breakdown").
+      </p>
+      <p>
+        Pick a card, any card, pick another card, try to find a match. If you
+        fail to find a match, your opponent goes next. Repeat. Win.
+      </p>
+    </main>
 
-		<script src="main.ts"></script>
-	</body>
+    <script src="main.ts"></script>
+  </body>
 </html>
