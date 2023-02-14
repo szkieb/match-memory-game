@@ -1,4 +1,4 @@
-# Matching Pairs Memory Game
+# Memory Game
 
 A basic memory/matching pairs game built using JavaScript, Parcel and (very little) Tailwind. 
 
